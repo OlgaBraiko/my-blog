@@ -1,5 +1,10 @@
 import React from "react";
+import cl from "classnames";
+import styles from "./index.module.scss";
 
-export const Article = () => {
-  return <div></div>;
+const Article = ({ className, children }) => {
+  return (
+    <article className={cl(className, styles.article)}>{children}</article>
+  );
 };
+export default Article;

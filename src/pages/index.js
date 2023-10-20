@@ -1,14 +1,23 @@
-import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
+import {
+  Section,
+  SocialNetworks,
+  Title,
+  Cover,
+  BuyMeCoffee,
+} from "../../components";
 
-const inter = Inter({ subsets: ["latin"] });
-
-export default function Home() {
+function Home() {
   return (
-    <div clavssName={styles.container}>
-      <Cover />
+    <div>
+      <Section>
+        <Cover title="Olga<br/> Braiko" />
+        <SocialNetworks />
+        <BuyMeCoffee />
+      </Section>
+      <Section>
+        <Title>New Post</Title>
+      </Section>
     </div>
   );
 }
+export default Home;
