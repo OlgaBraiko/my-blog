@@ -6,7 +6,9 @@ import {
   BuyMeCoffee,
 } from "../../components";
 
-function Home() {
+const LOAD_MORE_STEP = 4;
+
+function Home({ posts }) {
   return (
     <div>
       <Section>
@@ -21,3 +23,11 @@ function Home() {
   );
 }
 export default Home;
+
+export const getServerSideProps = async () => {
+  const { posts, total } = await loadDate(0, LOAD_MORE_STEP);
+};
+
+function loadDate(start, end) {
+  const query = ``;
+}
