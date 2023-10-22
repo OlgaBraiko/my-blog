@@ -24,10 +24,10 @@ function Home({ posts }) {
 }
 export default Home;
 
-export const getServerSideProps = async () => {
-  const { posts, total } = await loadDate(0, LOAD_MORE_STEP);
-};
+// export const getServerSideProps = async () => {
+//   const { posts, total } = await loadDate(0, LOAD_MORE_STEP);
+// };
 
-function loadDate(start, end) {
-  const query = ``;
-}
+// function loadDate(start, end) {
+//   const query = ``;
+// }
